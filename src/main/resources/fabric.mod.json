@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cobblemon-cards",
+	"version": "${version}",
+	"name": "Cobblemon Cards",
+	"description": "This mod adds collectible Pokemon-themed trading cards, perfect for Cobblemon Mod",
+	"authors": [
+		"TacoSocks21"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cobblemon-cards/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tacosocks.cobblemoncards.CobblemonCards"
+		],
+		"client": [
+			"net.tacosocks.cobblemoncards.CobblemonCardsClient"
+		],
+		"fabric-datagen": [
+			"net.tacosocks.cobblemoncards.CobblemonCardsDataGenerator"
+		]
+	},
+	"mixins": [
+		"cobblemon-cards.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
